@@ -1,0 +1,65 @@
+.top_post{
+    width: 100%;
+    margin-bottom: 5rem;
+
+    &_image{
+        width: 100%;
+
+        &_sec{
+            width: 100%;
+            height: 80vh;
+            margin-bottom: 2rem;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_content{
+            // background-color: red;
+            width: 60%;
+            padding: 1rem 0;
+            margin: 2rem auto;
+            text-align: center;
+
+            h3{
+                margin: 1rem 0;
+            }
+            h1{
+                font-size: 2.3rem;
+                margin: 1rem 0;
+            }
+            p{
+                text-align: justify;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.relatedpost{
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem 0;
+
+    &_heading{
+        width: 100%;
+        text-align: center;
+        
+        h1{
+            text-transform: capitalize;
+            font-size: 2rem;
+        }
+    }
+
+    &_posts{
+        width: 70%;
+        margin: 1rem auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 0.5rem;
+    }
+}

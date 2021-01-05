@@ -1,0 +1,167 @@
+@include media-md {
+    body .top_section .main {
+        &_box {
+            width: 100vw;
+            padding: 1rem 1.5rem;
+            h1{
+                font-size: 3rem;
+            }
+        }
+
+        &_btn {
+            width: 200px;
+
+            .btn {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    body .slide_section{
+        height: auto;
+        margin-top: 2rem;
+        &_button{
+            .slide_btn{
+                width: 200px;
+                .btn{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &_slide{
+            width: 90%;
+        }
+    }
+
+    body .news_social {
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        height: 100%;
+
+        &_left {
+            width: 100%;
+
+            &_text {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+
+        &_right {
+            width: 100%;
+
+            &_text {
+                font-size: 1.5rem;
+            }
+
+            &_icons {
+                gap: 0;
+            }
+        }
+    }
+
+    body .footer {
+        flex-direction: column;
+
+        &_left {
+            width: 100%;
+            padding: 1rem 0;
+        }
+
+        &_right {
+            width: 100%;
+            padding: 1rem 0;
+        }
+    }
+
+    body .mid_section {
+        flex-direction: column;
+
+        &_left {
+            width: 100%;
+        }
+
+        &_right {
+            width: 100%;
+
+            &_posts {
+                display: block;
+
+                &_post{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    body .top_post {
+        &_image {
+
+            &_content {
+                width: 100%;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+
+    body .relatedpost{
+        &_posts{
+            display: block;
+            width: 100%;
+            &_post{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@include media-l{
+    body .top_section .main {
+        &_box {
+            width: 90vw;
+            padding: 1rem 1.5rem;
+            background-color: red;
+            h1{
+                font-size: 3rem;
+            }
+        }
+
+        &_btn {
+            width: 200px;
+
+            .btn {
+                font-size: 1.4rem;
+            }
+        }
+    }  
+    body .slide_section{
+        height: auto;
+        margin-top: 2rem;
+        &_button{
+            .slide_btn{
+                width: 200px;
+                .btn{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &_slide{
+            width: 90%;
+        }
+    }
+    
+    body .news_social_left_text{
+        h4{
+            text-align: center;
+        }
+    }
+
+    body .mid_section_right_posts{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    body .relatedpost_posts{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
